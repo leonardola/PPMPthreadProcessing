@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EAFE21C61CEF466500217295 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EAFE21C51CEF466500217295 /* main.c */; };
+		EAAF9E781D05A37100F72112 /* Negative.c in Sources */ = {isa = PBXBuildFile; fileRef = EAAF9E761D05A37100F72112 /* Negative.c */; };
+		EAAF9E7B1D05A70F00F72112 /* Sepia.c in Sources */ = {isa = PBXBuildFile; fileRef = EAAF9E791D05A70F00F72112 /* Sepia.c */; };
+		EAFE21D31CEF4A2700217295 /* arquivo_ppm.c in Sources */ = {isa = PBXBuildFile; fileRef = EAFE21CC1CEF4A2700217295 /* arquivo_ppm.c */; };
+		EAFE21D41CEF4A2700217295 /* convolucao.c in Sources */ = {isa = PBXBuildFile; fileRef = EAFE21CD1CEF4A2700217295 /* convolucao.c */; };
+		EAFE21D51CEF4A2700217295 /* hough.c in Sources */ = {isa = PBXBuildFile; fileRef = EAFE21CE1CEF4A2700217295 /* hough.c */; };
+		EAFE21D61CEF4A2700217295 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EAFE21D01CEF4A2700217295 /* main.c */; };
+		EAFE21D71CEF4A2700217295 /* processos.c in Sources */ = {isa = PBXBuildFile; fileRef = EAFE21D21CEF4A2700217295 /* processos.c */; };
+		EAFE21DA1CEF4F9600217295 /* BlackAndWhite.c in Sources */ = {isa = PBXBuildFile; fileRef = EAFE21D81CEF4F9600217295 /* BlackAndWhite.c */; };
+		EAFE21DD1CEF50F100217295 /* LibThreads.c in Sources */ = {isa = PBXBuildFile; fileRef = EAFE21DB1CEF50F100217295 /* LibThreads.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +31,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EAAF9E761D05A37100F72112 /* Negative.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Negative.c; sourceTree = "<group>"; };
+		EAAF9E771D05A37100F72112 /* Negative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Negative.h; sourceTree = "<group>"; };
+		EAAF9E791D05A70F00F72112 /* Sepia.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sepia.c; sourceTree = "<group>"; };
+		EAAF9E7A1D05A70F00F72112 /* Sepia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sepia.h; sourceTree = "<group>"; };
 		EAFE21C21CEF466500217295 /* Prova2pthreads */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Prova2pthreads; sourceTree = BUILT_PRODUCTS_DIR; };
-		EAFE21C51CEF466500217295 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EAFE21CC1CEF4A2700217295 /* arquivo_ppm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arquivo_ppm.c; sourceTree = "<group>"; };
+		EAFE21CD1CEF4A2700217295 /* convolucao.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = convolucao.c; sourceTree = "<group>"; };
+		EAFE21CE1CEF4A2700217295 /* hough.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hough.c; sourceTree = "<group>"; };
+		EAFE21CF1CEF4A2700217295 /* img02.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = img02.ppm; sourceTree = "<group>"; };
+		EAFE21D01CEF4A2700217295 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EAFE21D11CEF4A2700217295 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		EAFE21D21CEF4A2700217295 /* processos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = processos.c; sourceTree = "<group>"; };
+		EAFE21D81CEF4F9600217295 /* BlackAndWhite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BlackAndWhite.c; sourceTree = "<group>"; };
+		EAFE21D91CEF4F9600217295 /* BlackAndWhite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackAndWhite.h; sourceTree = "<group>"; };
+		EAFE21DB1CEF50F100217295 /* LibThreads.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LibThreads.c; sourceTree = "<group>"; };
+		EAFE21DC1CEF50F100217295 /* LibThreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibThreads.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +79,21 @@
 		EAFE21C41CEF466500217295 /* Prova2pthreads */ = {
 			isa = PBXGroup;
 			children = (
-				EAFE21C51CEF466500217295 /* main.c */,
+				EAFE21CC1CEF4A2700217295 /* arquivo_ppm.c */,
+				EAFE21CD1CEF4A2700217295 /* convolucao.c */,
+				EAFE21CE1CEF4A2700217295 /* hough.c */,
+				EAFE21CF1CEF4A2700217295 /* img02.ppm */,
+				EAFE21D01CEF4A2700217295 /* main.c */,
+				EAFE21D11CEF4A2700217295 /* main.h */,
+				EAFE21D21CEF4A2700217295 /* processos.c */,
+				EAFE21D81CEF4F9600217295 /* BlackAndWhite.c */,
+				EAFE21D91CEF4F9600217295 /* BlackAndWhite.h */,
+				EAFE21DB1CEF50F100217295 /* LibThreads.c */,
+				EAFE21DC1CEF50F100217295 /* LibThreads.h */,
+				EAAF9E761D05A37100F72112 /* Negative.c */,
+				EAAF9E771D05A37100F72112 /* Negative.h */,
+				EAAF9E791D05A70F00F72112 /* Sepia.c */,
+				EAAF9E7A1D05A70F00F72112 /* Sepia.h */,
 			);
 			path = Prova2pthreads;
 			sourceTree = "<group>";
@@ -118,7 +154,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAFE21C61CEF466500217295 /* main.c in Sources */,
+				EAFE21D61CEF4A2700217295 /* main.c in Sources */,
+				EAFE21DA1CEF4F9600217295 /* BlackAndWhite.c in Sources */,
+				EAFE21D51CEF4A2700217295 /* hough.c in Sources */,
+				EAAF9E7B1D05A70F00F72112 /* Sepia.c in Sources */,
+				EAFE21D71CEF4A2700217295 /* processos.c in Sources */,
+				EAFE21D41CEF4A2700217295 /* convolucao.c in Sources */,
+				EAFE21DD1CEF50F100217295 /* LibThreads.c in Sources */,
+				EAAF9E781D05A37100F72112 /* Negative.c in Sources */,
+				EAFE21D31CEF4A2700217295 /* arquivo_ppm.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +283,7 @@
 				EAFE21CB1CEF466500217295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
