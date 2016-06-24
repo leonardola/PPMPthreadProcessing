@@ -26,6 +26,8 @@ PPMImage *negativo (PPMImage *img)
     
     fprintf(stderr, "Aplicando o negativo...");
     
+    
+    //roda nas threads genericas, passando a função de processamento
     runOnThread(img, imgNegativo, (void *) partialNegative);
     
     fprintf(stderr, "pronto\n");
@@ -34,13 +36,14 @@ PPMImage *negativo (PPMImage *img)
     
 }
 
-
+//processamento de uma tira da imagem
 void partialNegative(void *arg){
     int i;
     int r,g,b;
     
     PartialData *data = (PartialData*) arg;
     
+    //passa por uma tira da imagem por thread
     for ( i = data->start; i < data->end; i++ ) {
         r = 255 - data->input->data[i].red;
         data->output->data[i].red = r < 0? 0 : r;

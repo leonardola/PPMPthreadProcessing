@@ -30,17 +30,20 @@ PPMImage *aplicaSepia(PPMImage *img)
     // SEÇÃO PASSÍVEL DE OTIMIZAÇÃO
     fprintf(stderr, "Aplicando o filtro sepia...");
     
+    //roda em thread generica passando a função de processamento
     runOnThread(img, imgsepia, (void *) partialSepia);
     
     fprintf(stderr, "pronto\n");
     return imgsepia;
 }
 
+//função para processamento parcial
 void partialSepia(void *arg){
     int i, r,g,b;
     
     PartialData *data = (PartialData*) arg;
     
+    //processa parte da imagem por thread
     for ( i = data->start; i < data->end; i++ ) {
         r = 0.393 * data->input->data[i].red + 0.769 * data->input->data[i].green + 0.189 * data->input->data[i].blue;
         data->output->data[i].red = r > 255 ? 255 : r;

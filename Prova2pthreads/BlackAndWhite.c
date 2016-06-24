@@ -33,12 +33,15 @@ PPMImage *converteBW(PPMImage *img)
     
     fprintf(stderr, "Convertendo para escala de cinza...");
     
+    //roda em thread genérica
     runOnThread(img, imgBW, (void*) *partialBW);
     
     fprintf(stderr, "pronto\n");
     return imgBW;
 }
 
+
+//função de processamento parcial
 void partialBW(void *arg){
     int tmp;
     int i;
@@ -46,6 +49,7 @@ void partialBW(void *arg){
     
     PartialData *data = (PartialData*) arg;
     
+    //processa uma tira da imagem por vez
     for(i = data->start; i < data->end; i++){
         tmp = (int) ( data->input->data[i].red * 0.299 +
                      data->input->data[i].green * 0.587 +
